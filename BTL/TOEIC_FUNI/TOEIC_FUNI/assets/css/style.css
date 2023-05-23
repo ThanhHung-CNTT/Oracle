@@ -1,0 +1,247 @@
+
+body {
+	background-color: #f7f7f7;
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 1.254;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 450px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(143, 79, 60);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+container {
+    border-radius: 5px;
+    background-color: #111111;
+    padding: 20px;
+}
+#wrapper {
+	width: auto;
+	margin: 0px auto;
+	padding: 0px 60px;
+	padding-bottom: 10px;
+	background-color: #dfe4ea;
+}
+#content{
+	width: auto;
+	background-color: #ffffff;
+	border-radius: 15px;
+}
+#container{
+	width: 100%;
+	background-color: red;
+}
+.row-topic {
+	margin-top: 2.8em;
+}
+.jumbotron {
+	background-color: #fcfdfe;
+}
+.image{
+	border: 1px solid #ffffff;	
+	border-radius: 12px;
+}
+.image:hover{
+	transform: scale(1.05);
+}
+/* .col-sm-3{
+	border: 3px solid #d2d2d2;
+}
+.col-sm-3:hover{
+	transform: scale(1.25);
+	 */
+
+/* conatact form */
+
+
+
+
+/* footer {
+	margin-top: 3em;
+	border-top:  2px solid #D2691E;
+	font-size: 1.5em;
+	font-style: bold;
+}
+footer p {
+	margin-top: 2em;
+} */
+/*---sologan----*/
+#sologan {
+	font-style: bold;
+	margin-top: 2em;
+	font-size: 1em;
+	color: #c23616;
+	font-family: 'Noto Serif', serif;
+}
+/*-----title-topic-----tên các chủ đề*/
+.title-topic{
+	font-family: 'Itim', cursive;
+	font-size: 2em;
+}
+#slideshow {
+	margin-top: 83px;
+}
+.carousel {
+	border-radius: 15px 15px 0px 0px;
+	overflow: hidden;
+}
+.line-w-45px {
+		width: 100%;
+		height: 1px;
+		background-color: #d2d2d2;
+	}
+/*.navbar .container-fluid .navbar-header .navbar-brand {
+	margin-left: 32px;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 14px;
+}
+.nav>li>a {
+	position: relative;
+    display: block;
+    padding: 25px 47px;
+}*/
+
+/*Định dạng logo*/
+#img-logo{
+	padding: 10px 15px;
+}
+.navbar{
+	background-color: #32cdff;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-brand:hover {
+    color: #dfe4ea;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #dfe4ea;
+}
+.navbar-inverse {
+    border-color: #32cdff;
+}
+
+/*.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #32cdff;
+}*/
+.footer-basic {
+	padding:40px 0;
+	background-color:#ffffff;
+	color:#4b4c4d;
+	margin-top: 20px;
+  }
+  
+  .footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+  }
+  
+  .footer-basic li {
+	padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+	opacity:1;
+  }
+  
+  .footer-basic .social {
+	text-align:center;
+	padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+	opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+  }
